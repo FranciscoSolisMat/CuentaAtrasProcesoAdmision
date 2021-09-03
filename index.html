@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800" rel="stylesheet">
-    <!-- Load Favicon from https://i.imgur.com/zts9uoM.png -->
     <link rel="shortcut icon" href="https://i.imgur.com/zts9uoM.png" type="image/x-icon">
 </head>
 <body class="subpixel-antialiased">
     <nav class="bg-blue-600 shadow text-white">
         <div class="container mx-auto px-6 py-3">
-            <div class="md:flex md:items-center md:justify-center">
+            <div class="md:flex md:items-center md:justify-between">
                 <div class="flex justify-center items-center">
                     <div class="text-xl font-semibold">
                         <h1 class="text-white text-xl font-bold md:text-2xl">Hecho con <span class="text-red-500">&heartsuit;</span> por FranciscoSolis</h1>
+                    </div>
+                </div>
+                <div class="md:flex md:items-center">
+                    <a class="text-white text-xl font-bold md:text-2xl flex items-center justify-between" href="https://demre.cl/calendario/" target="_blank">Calendario Oficial&nbsp;<svg class="w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" class="svg-inline--fa fa-external-link-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg></a>
+                </div>
+                <div class="md:flex md:items-center">
+                    <div class="flex justify-center items-center mr-2 text-white text-xl font-bold md:text-2xl">
+                        <h1>Notificaiones de Sonido&nbsp;</h1>
+                        <svg id="notifications-on" style="display:none" class="cursor-pointer w-5 h-5" aria-hidden="true" focusable="false" data-prefix="far" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M439.39 362.29c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71zM67.53 368c21.22-27.97 44.42-74.33 44.53-159.42 0-.2-.06-.38-.06-.58 0-61.86 50.14-112 112-112s112 50.14 112 112c0 .2-.06.38-.06.58.11 85.1 23.31 131.46 44.53 159.42H67.53zM224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64z"></path></svg>
+                        <svg id="notifications-off" class="cursor-pointer w-6 h-6" aria-hidden="true" focusable="false" data-prefix="far" data-icon="bell-slash" class="svg-inline--fa fa-bell-slash fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M633.99 471.02L36 3.51C29.1-2.01 19.03-.9 13.51 6l-10 12.49C-2.02 25.39-.9 35.46 6 40.98l598 467.51c6.9 5.52 16.96 4.4 22.49-2.49l10-12.49c5.52-6.9 4.41-16.97-2.5-22.49zM163.53 368c16.71-22.03 34.48-55.8 41.4-110.58l-45.47-35.55c-3.27 90.73-36.47 120.68-54.84 140.42-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h279.66l-61.4-48H163.53zM320 96c61.86 0 112 50.14 112 112 0 .2-.06.38-.06.58.02 16.84 1.16 31.77 2.79 45.73l59.53 46.54c-8.31-22.13-14.34-51.49-14.34-92.85 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84c-26.02 5.41-49.45 16.94-69.13 32.72l38.17 29.84C275 103.18 296.65 96 320 96zm0 416c35.32 0 63.97-28.65 63.97-64H256.03c0 35.35 28.65 64 63.97 64z"></path></svg>
                     </div>
                 </div>
             </div>
@@ -23,10 +32,11 @@
     <div class="flex justify-center min-h-screen items-center container mx-auto mt-10 grid grid-flow-row grid-cols-1 md:grid-cols-3 grid-rows-1 md:grid-rows-3 gap-5 justify-items-center">
         <!-- Publicacion Oferta Definitiva de Carreras, Vacantes y Ponderaciones (publicacionofertadefinitiva) 16/09 -->
         <div class="w-full max-w-md">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="publicacionofertadefinitiva" data-date="16 Sep 2021">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="publicacionofertadefinitiva" data-date="16 Sep 2021">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Publicación Oferta Definitiva de Carreras, Vacantes y Ponderaciones <span id="publicacionofertadefinitiva-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Publicación Oferta Definitiva de Carreras, Vacantes y Ponderaciones - <span id="publicacionofertadefinitiva-date"></span></h1>
                     <div class="mt-5">
+                        <span id="publicacionofertadefinitiva-extra"></span>
                         <span><span class="font-bold" id="publicacionofertadefinitiva-days">0</span> Días</span>
                         <span><span class="font-bold" id="publicacionofertadefinitiva-hours">0</span> Horas</span>
                         <span><span class="font-bold" id="publicacionofertadefinitiva-minutes">0</span> Minutos</span>
@@ -36,12 +46,29 @@
             </div>
         </div>
 
+        <!-- Postulación A Beneficios Estudiantiles Completando FUAS (fuas) 5/10 -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="fuas" data-date="5 Oct 2021">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Postulación A Beneficios Estudiantiles Completando FUAS - <span id="fuas-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="fuas-extra"></span>
+                        <span><span class="font-bold" id="fuas-days">0</span> Días</span>
+                        <span><span class="font-bold" id="fuas-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="fuas-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="fuas-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Publicacion Nomina Oficical De Carreras PACE Con Oferta Centralizada (publicaciononominaoficial) 21/10 -->
         <div class="w-full max-w-md">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="publicaciononominaoficial" data-date="21 Oct 2021">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="publicaciononominaoficial" data-date="21 Oct 2021">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Publicacion Nomina Oficical De Carreras PACE Con Oferta Centralizada <span id="publicaciononominaoficial-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Publicacion Nomina Oficical De Carreras PACE Con Oferta Centralizada - <span id="publicaciononominaoficial-date"></span></h1>
                     <div class="mt-5">
+                        <span id="publicaciononominaoficial-extra"></span>
                         <span><span class="font-bold" id="publicaciononominaoficial-days">0</span> Días</span>
                         <span><span class="font-bold" id="publicaciononominaoficial-hours">0</span> Horas</span>
                         <span><span class="font-bold" id="publicaciononominaoficial-minutes">0</span> Minutos</span>
@@ -53,10 +80,11 @@
 
         <!-- Publicacion Servicios y Beneficios Universitarios (publicacionserviciosybeneficios) 25/11 -->
         <div class="w-full max-w-md">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="publicacionserviciosybeneficios" data-date="25 Nov 2021">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="publicacionserviciosybeneficios" data-date="25 Nov 2021">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Publicacion Servicios y Beneficios Universitarios <span id="publicacionserviciosybeneficios-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Publicacion Servicios y Beneficios Universitarios - <span id="publicacionserviciosybeneficios-date"></span></h1>
                     <div class="mt-5">
+                        <span id="publicacionserviciosybeneficios-extra"></span>
                         <span><span class="font-bold" id="publicacionserviciosybeneficios-days">0</span> Días</span>
                         <span><span class="font-bold" id="publicacionserviciosybeneficios-hours">0</span> Horas</span>
                         <span><span class="font-bold" id="publicacionserviciosybeneficios-minutes">0</span> Minutos</span>
@@ -65,62 +93,130 @@
                 </div>
             </div>
         </div>
-                
-        <!-- Prueba 1 Grupo 1 (p1g1) 6/12 -->
-        <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="p1g1" data-date="6 Dec 2021">
+
+        <!-- Rendición Prueba de Comprensión Lectora (pruebacomprensionlectora_g1) Grupo 1 6/12 - 10:00 AM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebacomprensionlectora_g1" data-date="6 Dec 2021, 10:00 AM" data-hour="10:00 AM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Rendicion Prueba 1 Grupo 1 <span id="p1g1-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Comprensión Lectora (Grupo 1) - <span id="pruebacomprensionlectora_g1-date"></span></h1>
                     <div class="mt-5">
-                        <span><span class="font-bold" id="p1g1-days">0</span> Días</span>
-                        <span><span class="font-bold" id="p1g1-hours">0</span> Horas</span>
-                        <span><span class="font-bold" id="p1g1-minutes">0</span> Minutos</span>
-                        <span><span class="font-bold" id="p1g1-seconds">0</span> Segundos</span>
+                        <span id="pruebacomprensionlectora_g1-extra"></span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g1-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g1-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g1-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g1-seconds">0</span> Segundos</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Prueba 2 Grupo 1 (p2g1) 7/12 -->
-        <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="p2g1" data-date="7 Dec 2021">
+        <!-- Rendición Prueba de Ciencias (pruebaciencias_g1) Grupo 1 6/12 - 03:00 PM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebaciencias_g1" data-date="6 Dec 2021, 03:00 PM" data-hour="03:00 PM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Rendicion Prueba 2 Grupo 1 <span id="p2g1-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Ciencias (Grupo 1) - <span id="pruebaciencias_g1-date"></span></h1>
                     <div class="mt-5">
-                        <span><span class="font-bold" id="p2g1-days">0</span> Días</span>
-                        <span><span class="font-bold" id="p2g1-hours">0</span> Horas</span>
-                        <span><span class="font-bold" id="p2g1-minutes">0</span> Minutos</span>
-                        <span><span class="font-bold" id="p2g1-seconds">0</span> Segundos</span>
+                        <span id="pruebaciencias_g1-extra"></span>
+                        <span><span class="font-bold" id="pruebaciencias_g1-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebaciencias_g1-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebaciencias_g1-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebaciencias_g1-seconds">0</span> Segundos</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Prueba 1 Grupo 2 (p1g2) 9/12 -->
-        <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="p1g2" data-date="9 Dec 2021">
+        <!-- Rendición Prueba de Matemática (pruebamatematica_g1) Grupo 1 7/12 - 10:00 AM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebamatematica_g1" data-date="7 Dec 2021, 10:00 AM" data-hour="10:00 AM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Rendicion Prueba 1 Grupo 2 <span id="p1g2-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Matemática (Grupo 1) - <span id="pruebamatematica_g1-date"></span></h1>
                     <div class="mt-5">
-                        <span><span class="font-bold" id="p1g2-days">0</span> Días</span>
-                        <span><span class="font-bold" id="p1g2-hours">0</span> Horas</span>
-                        <span><span class="font-bold" id="p1g2-minutes">0</span> Minutos</span>
-                        <span><span class="font-bold" id="p1g2-seconds">0</span> Segundos</span>
+                        <span id="pruebamatematica_g1-extra"></span>
+                        <span><span class="font-bold" id="pruebamatematica_g1-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebamatematica_g1-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebamatematica_g1-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebamatematica_g1-seconds">0</span> Segundos</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Prueba 2 Grupo 2 (p2g2) 10/12 -->
-        <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="p2g2"  data-date="10 Dec 2021">
+        <!-- Rendición Prueba de Historia (pruebahistoria_g1) Grupo 1 7/12 - 03:00 PM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebahistoria_g1" data-date="7 Dec 2021, 03:00 PM" data-hour="03:00 PM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Rendicion Prueba 2 Grupo 2 <span id="p2g2-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Historia (Grupo 1) - <span id="pruebahistoria_g1-date"></span></h1>
                     <div class="mt-5">
-                        <span><span class="font-bold" id="p2g2-days">0</span> Días</span>
-                        <span><span class="font-bold" id="p2g2-hours">0</span> Horas</span>
-                        <span><span class="font-bold" id="p2g2-minutes">0</span> Minutos</span>
-                        <span><span class="font-bold" id="p2g2-seconds">0</span> Segundos</span>
+                        <span id="pruebahistoria_g1-extra"></span>
+                        <span><span class="font-bold" id="pruebahistoria_g1-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebahistoria_g1-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebahistoria_g1-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebahistoria_g1-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rendición Prueba de Comprensión Lectora (pruebacomprensionlectora_g2) Grupo 2 9/12 - 10:00 AM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebacomprensionlectora_g2" data-date="9 Dec 2021, 10:00 AM" data-hour="10:00 AM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Comprensión Lectora (Grupo 2) - <span id="pruebacomprensionlectora_g2-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="pruebacomprensionlectora_g2-extra"></span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g2-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g2-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g2-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebacomprensionlectora_g2-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rendición Prueba de Ciencias (pruebaciencias_g2) Grupo 2 9/12 - 03:00 PM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebaciencias_g2" data-date="9 Dec 2021, 03:00 PM" data-hour="03:00 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Ciencias (Grupo 2) - <span id="pruebaciencias_g2-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="pruebaciencias_g2-extra"></span>
+                        <span><span class="font-bold" id="pruebaciencias_g2-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebaciencias_g2-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebaciencias_g2-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebaciencias_g2-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rendición Prueba de Matemática (pruebamatematica_g2) Grupo 2 10/12 - 10:00 AM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebamatematica_g2" data-date="10 Dec 2021, 10:00 AM" data-hour="10:00 AM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Matemática (Grupo 2) - <span id="pruebamatematica_g2-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="pruebamatematica_g2-extra"></span>
+                        <span><span class="font-bold" id="pruebamatematica_g2-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebamatematica_g2-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebamatematica_g2-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebamatematica_g2-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rendición Prueba de Historia (pruebahistoria_g2) Grupo 2 10/12 - 03:00 PM -->
+        <div class="w-full max-w-md">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="pruebahistoria_g2" data-date="10 Dec 2021, 03:00 PM" data-hour="03:00 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Rendición Prueba de Historia (Grupo 2) - <span id="pruebahistoria_g2-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="pruebahistoria_g2-extra"></span>
+                        <span><span class="font-bold" id="pruebahistoria_g2-days">0</span> Días</span>
+                        <span><span class="font-bold" id="pruebahistoria_g2-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="pruebahistoria_g2-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="pruebahistoria_g2-seconds">0</span> Segundos</span>
                     </div>
                 </div>
             </div>
@@ -128,10 +224,11 @@
 
         <!-- Simulacion Puntaje Ranking (ranking) 15/12 -->
         <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="ranking" data-date="15 Dec 2021">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="ranking" data-date="15 Dec 2021">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Simulación Puntaje Ranking <span id="ranking-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Simulación Puntaje Ranking - <span id="ranking-date"></span></h1>
                     <div class="mt-5">
+                        <span id="ranking-extra"></span>
                         <span><span class="font-bold" id="ranking-days">0</span> Días</span>
                         <span><span class="font-bold" id="ranking-hours">0</span> Horas</span>
                         <span><span class="font-bold" id="ranking-minutes">0</span> Minutos</span>
@@ -141,12 +238,13 @@
             </div>
         </div>
 
-        <!-- Publicacion Resultados PDT (resultadospdt) 11/01/2022-->
+        <!-- Publicacion Resultados PDT (resultadospdt) 11/01/2022 08:00 AM -->
         <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="resultadospdt" data-date="11 Jan 2022">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="resultadospdt" data-date="11 Jan 2022, 08:00 AM" data-hour="08:00 AM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Publicación Resultados PDT <span id="resultadospdt-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Publicación Resultados PDT - <span id="resultadospdt-date"></span></h1>
                     <div class="mt-5">
+                        <span id="resultadospdt-extra"></span>
                         <span><span class="font-bold" id="resultadospdt-days">0</span> Días</span>
                         <span><span class="font-bold" id="resultadospdt-hours">0</span> Horas</span>
                         <span><span class="font-bold" id="resultadospdt-minutes">0</span> Minutos</span>
@@ -156,12 +254,13 @@
             </div>
         </div>
 
-        <!-- Inicio Período De Postulaciones A Universidades Adscritas (periodopostulacionuniversidadesadscritas) 11/01/2022-->
+        <!-- Inicio Período De Postulaciones A Universidades Adscritas (periodopostulacionuniversidadesadscritas) 11/01/2022 09:00 AM -->
         <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="periodopostulacionuniversidadesadscritas" data-date="11 Jan 2022">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="periodopostulacionuniversidadesadscritas" data-date="11 Jan 2022, 09:00 AM" data-hour="09:00 AM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Inicio Período De Postulaciones A Universidades Adscritas <span id="periodopostulacionuniversidadesadscritas-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Inicio Período De Postulaciones A Universidades Adscritas - <span id="periodopostulacionuniversidadesadscritas-date"></span></h1>
                     <div class="mt-5">
+                        <span id="periodopostulacionuniversidadesadscritas-extra"></span>
                         <span><span class="font-bold" id="periodopostulacionuniversidadesadscritas-days">0</span> Días</span>
                         <span><span class="font-bold" id="periodopostulacionuniversidadesadscritas-hours">0</span> Horas</span>
                         <span><span class="font-bold" id="periodopostulacionuniversidadesadscritas-minutes">0</span> Minutos</span>
@@ -171,60 +270,295 @@
             </div>
         </div>
 
-        <!-- Publicación Resultados De Postulaciones (publicacionresultadospostulaciones) 24/01/2022 -->
+        <!-- Verificación De Puntajes (verificacionpuntajes) 11/01/2022 09:00 AM to 08:00 PM -->
         <div class="w-full max-w-md mx-5">
-            <div class="bg-gray-50 shadow-md rounded p-7 mb-4" id="publicacionresultadospostulaciones" data-date="24 Jan 2022">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="verificacionpuntajes" data-date="11 Jan 2022, 09:00 AM" data-hour="09:00 AM" data-end="11 Jan 2022, 08:00 PM">
                 <div class="mb-4">
-                    <h1 class="text-xl font-bold text-gray-800">Publicación Resultados De Postulaciones <span id="publicacionresultadospostulaciones-date"></span></h1>
+                    <h1 class="text-xl font-bold text-gray-800">Verificación De Puntajes - <span id="verificacionpuntajes-date"></span></h1>
                     <div class="mt-5">
-                        <span><span class="font-bold" id="publicacionresultadospostulaciones-days">0</span> Días</span>
-                        <span><span class="font-bold" id="publicacionresultadospostulaciones-hours">0</span> Horas</span>
-                        <span><span class="font-bold" id="publicacionresultadospostulaciones-minutes">0</span> Minutos</span>
-                        <span><span class="font-bold" id="publicacionresultadospostulaciones-seconds">0</span> Segundos</span>
+                        <span id="verificacionpuntajes-extra"></span>
+                        <span><span class="font-bold" id="verificacionpuntajes-days">0</span> Días</span>
+                        <span><span class="font-bold" id="verificacionpuntajes-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="verificacionpuntajes-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="verificacionpuntajes-seconds">0</span> Segundos</span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Fin Etapa de Postulaciones (finpostulaciones) 14/01/2022 01:00 PM -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="finpostulaciones" data-date="14 Jan 2022, 01:00 PM" data-hour="01:00 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Fin Etapa De Postulaciones - <span id="finpostulaciones-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="finpostulaciones-extra"></span>
+                        <span><span class="font-bold" id="finpostulaciones-days">0</span> Días</span>
+                        <span><span class="font-bold" id="finpostulaciones-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="finpostulaciones-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="finpostulaciones-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resultados del Proceso de Selección (resultadosprocesoseleccion) 24/01/2022 12:00 PM -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="resultadosprocesoseleccion" data-date="24 Jan 2022, 12:00 PM" data-hour="12:00 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Resultados del Proceso de Selección - <span id="resultadosprocesoseleccion-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="resultadosprocesoseleccion-extra"></span>
+                        <span><span class="font-bold" id="resultadosprocesoseleccion-days">0</span> Días</span>
+                        <span><span class="font-bold" id="resultadosprocesoseleccion-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="resultadosprocesoseleccion-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="resultadosprocesoseleccion-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verificación de Resultados de Selección (verificacionresultadosseleccion_1) 24/01/2022 12:00 PM to 05:00 PM -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="verificacionresultadosseleccion_1" data-date="24 Jan 2022, 12:00 PM" data-hour="12:00 PM" data-end="24 Jan 2022, 05:00 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Verificación de Resultados de Selección - <span id="verificacionresultadosseleccion_1-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="verificacionresultadosseleccion_1-extra"></span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_1-days">0</span> Días</span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_1-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_1-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_1-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verificación de Resultados de Selección (verificacionresultadosseleccion_2) 25/01/2022 09:00 AM to 05:00 PM -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="verificacionresultadosseleccion_2" data-date="25 Jan 2022, 09:00 AM" data-hour="09:00 AM" data-end="25 Jan 2022, 05:00 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Verificación de Resultados de Selección - <span id="verificacionresultadosseleccion_2-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="verificacionresultadosseleccion_2-extra"></span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_2-days">0</span> Días</span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_2-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_2-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="verificacionresultadosseleccion_2-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proceso de Matrícula: Inicio de primera etapa (matriculaetapa1) 25/01/2022 -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="matriculaetapa1" data-date="25 Jan 2022">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Proceso de Matrícula: Inicio de primera etapa - <span id="matriculaetapa1-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="matriculaetapa1-extra"></span>
+                        <span><span class="font-bold" id="matriculaetapa1-days">0</span> Días</span>
+                        <span><span class="font-bold" id="matriculaetapa1-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="matriculaetapa1-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="matriculaetapa1-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inicio período de Retracto (periodoretracto) 25/01/2022 -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="periodoretracto" data-date="25 Jan 2022">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Inicio período de Retracto - <span id="periodoretracto-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="periodoretracto-extra"></span>
+                        <span><span class="font-bold" id="periodoretracto-days">0</span> Días</span>
+                        <span><span class="font-bold" id="periodoretracto-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="periodoretracto-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="periodoretracto-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proceso de Matrícula: Cierre de primera etapa (matriculaetapa1_cierre) 27/01/2022 -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="matriculaetapa1_cierre" data-date="27 Jan 2022">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Proceso de Matrícula: Cierre de primera etapa - <span id="matriculaetapa1_cierre-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="matriculaetapa1_cierre-extra"></span>
+                        <span><span class="font-bold" id="matriculaetapa1_cierre-days">0</span> Días</span>
+                        <span><span class="font-bold" id="matriculaetapa1_cierre-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="matriculaetapa1_cierre-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="matriculaetapa1_cierre-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proceso de Matrícula: Inicio de segunda etapa (matriculaetapa2 ) 28/01/2022 -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="matriculaetapa2" data-date="28 Jan 2022">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Proceso de Matrícula: Inicio de segunda etapa - <span id="matriculaetapa2-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="matriculaetapa2-extra"></span>
+                        <span><span class="font-bold" id="matriculaetapa2-days">0</span> Días</span>
+                        <span><span class="font-bold" id="matriculaetapa2-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="matriculaetapa2-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="matriculaetapa2-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proceso de Matrícula: Cierre de segunda etapa (matriculaetapa2_cierre) 03/02/2022 -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="matriculaetapa2_cierre" data-date="03 Feb 2022">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Proceso de Matrícula: Cierre de segunda etapa - <span id="matriculaetapa2_cierre-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="matriculaetapa2_cierre-extra"></span>
+                        <span><span class="font-bold" id="matriculaetapa2_cierre-days">0</span> Días</span>
+                        <span><span class="font-bold" id="matriculaetapa2_cierre-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="matriculaetapa2_cierre-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="matriculaetapa2_cierre-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cierre período de Retracto (periodoretracto_cierre) 03/02/2022 -->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="periodoretracto_cierre" data-date="03 Feb 2022">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Cierre período de Retracto - <span id="periodoretracto_cierre-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="periodoretracto_cierre-extra"></span>
+                        <span><span class="font-bold" id="periodoretracto_cierre-days">0</span> Días</span>
+                        <span><span class="font-bold" id="periodoretracto_cierre-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="periodoretracto_cierre-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="periodoretracto_cierre-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test (test) 2/09/2021 08:50 PM-->
+        <div class="w-full max-w-md mx-5">
+            <div class="bg-gray-50 shadow-md rounded p-7 mb-4 hover:shadow-xl transition-all duration-500 fecha" id="test" data-date="2 Sep 2021 08:53 PM">
+                <div class="mb-4">
+                    <h1 class="text-xl font-bold text-gray-800">Test - <span id="test-date"></span></h1>
+                    <div class="mt-5">
+                        <span id="test-extra"></span>
+                        <span><span class="font-bold" id="test-days">0</span> Días</span>
+                        <span><span class="font-bold" id="test-hours">0</span> Horas</span>
+                        <span><span class="font-bold" id="test-minutes">0</span> Minutos</span>
+                        <span><span class="font-bold" id="test-seconds">0</span> Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="shadow text-white mt-10">
         <div class="mx-auto px-6 py-3">
-            <div class="md:flex md:items-center md:justify-end">
-                <div class="flex justify-end items-center">
-                    <div class="text-xl font-semibold">
-                        <a href="https://github.com/FranciscoSolisMat/CuentaAtrasProcesoAdmision" target="_blank">
-                            <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
-                                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                            </svg>
-                        </a>
-                    </div>
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="text-sm font-normal">
+                    <span class="text-black"><span class="font-bold">Por qué no se guarda la notificacion de sonido?</span><br>Debido a las limitaciones de los buscadores modernos, debes interactuar con el sitio web para reproducir sonidos.</span>
+                </div> 
+                <div class="text-xl font-semibold">
+                    <a href="https://github.com/FranciscoSolisMat/CuentaAtrasProcesoAdmision" target="_blank">
+                        <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
+        </div>
+
+        <div class="hidden absolute">
+            <button id="ready">Ready</button>
+            <audio preload="auto" id="ready_mp3"><source src="ready.mp3" type="audio/mpeg"></audio>
         </div>
     </nav>
 
     <script>
-        const keys = ['publicacionofertadefinitiva', 'publicaciononominaoficial', 'publicacionserviciosybeneficios', 'p1g1', 'p2g1', 'p1g2', 'p2g2', 'ranking', 'resultadospdt', 'periodopostulacionuniversidadesadscritas', 'publicacionresultadospostulaciones'];
+        const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        const keys = [];
+        const settings = {
+            soundNotifications: false,
+        }
+        const sent = [];
+        for(let el of document.getElementsByClassName('fecha')){
+            let key = el.getAttribute('id')
+            if(!keys.includes(key)) keys.push(key)
+        }
+        // Function to retrieve AM/PM time from date
+        function getAMPM(date) {
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var ampm = hours >= 12 ? ' PM' : ' AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            minutes = minutes < 10 ? '0'+minutes : minutes;
+            return hours + ':' + minutes + ' ' + ampm;
+        }
+
         function update(date, key){
-            var now = new Date();
-            // Check if date is past
-            if(now > date){
-                // Set hidden and continue
-                document.getElementById(key).parentElement.remove();
-                return
+            var now = new Date(); 
+            let endString = document.getElementById(key).getAttribute('data-end');
+            if(endString != null){
+                document.getElementById(key + '-extra').innerText = 'Inicia En: '
             }
-            var days = Math.floor((date - now) / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((date - now) / (1000 * 60 * 60) % 24);
-            var minutes = Math.floor((date - now) / (1000 * 60) % 60);
-            var seconds = Math.floor((date - now) / 1000 % 60);
+            let end = endString != null ? new Date(endString) : date;
+            let stopUpdate = false
+            if(now > date || now > end){
+                if(endString != null){
+                    if(now < end){
+                        date = end
+                        document.getElementById(key + '-extra').innerText = 'Termina en: '
+                    }else{
+                        stopUpdate = true
+                        document.getElementById(key + '-extra').innerText = 'Ha finalizado (Es hoy). '
+                    }
+                }else{
+                    stopUpdate = true
+                    document.getElementById(key + '-extra').innerText = 'Ha finalizado (Es hoy). '
+                }
+            }
+            var days = stopUpdate ? 0 : Math.abs(Math.trunc((date - now) / (1000 * 60 * 60 * 24)));
+            var hours = stopUpdate ? 0 : Math.abs(Math.trunc((date - now) / (1000 * 60 * 60) % 24));
+            var minutes = stopUpdate ? 0 : Math.abs(Math.trunc((date - now) / (1000 * 60) % 60));
+            var seconds = stopUpdate ? 0 : Math.abs(Math.trunc((date - now) / 1000 % 60));
             document.getElementById(key + '-days').innerText = days
             document.getElementById(key + '-hours').innerText = hours
             document.getElementById(key + '-minutes').innerText = minutes
             document.getElementById(key + '-seconds').innerText = seconds
+            if(settings.soundNotifications){
+                if(!stopUpdate && !sent.includes(key)){
+                    if(days == 0 && hours == 0 && minutes == 0 && seconds == 0){
+                        sent.push(key)
+                        document.getElementById('ready').click()
+                        setTimeout(() => {
+                            alert('La cuenta atrás de \'' + document.getElementById(key + '-date').parentElement.innerText + '\' ha finalizado!')
+                        }, 1500)
+                    }
+                }
+            }
 
             var dayOfMonth = date.getDate()
             var month = date.getMonth()
-            document.getElementById(key + '-date').innerText = '(' + dayOfMonth + '/' + (month + 1) + ')'
+
+            let dayName = (date.toLocaleDateString('es-ES', {weekday: 'long'})+'')
+            dayName = dayName.charAt(0).toUpperCase() + dayName.slice(1)
+            let dataHour = document.getElementById(key).getAttribute('data-hour') != null ? (' a las ' + document.getElementById(key).getAttribute('data-hour')) : ''
+            let dataEnd = document.getElementById(key).getAttribute('data-end') != null ? (' hasta las ' + getAMPM(end)) : ''
+            document.getElementById(key + '-date').innerText = dayName + ' ' + dayOfMonth + ' de ' + months[month] + dataHour + dataEnd
         }
 
         function run(){
@@ -233,6 +567,23 @@
                 if(el) update(new Date(document.getElementById(key).getAttribute('data-date')), key);
             })
             setTimeout(run, 500);
+        }
+
+        document.getElementById('ready').onclick = () => { 
+            let el = document.getElementById('ready_mp3')
+            el.volume = 0.4
+            el.play() 
+        }
+        document.getElementById('notifications-on').onclick = () => {
+            document.getElementById('notifications-on').style.display = 'none'
+            document.getElementById('notifications-off').style.display = ''
+            settings.soundNotifications = false
+        }
+
+        document.getElementById('notifications-off').onclick = () => {
+            document.getElementById('notifications-off').style.display = 'none'
+            document.getElementById('notifications-on').style.display = ''
+            settings.soundNotifications = true
         }
 
         run()

@@ -4,6 +4,7 @@ const dates = [
     {id: 'finmodificardatosinscripcion',date: '22 Sep 2021',content: 'Fin Plazo Para Modificar Datos De Inscripcion En La Plataforma'},
     {id: 'fuas',date: '5 Oct 2021',content: 'Postulación A Beneficios Estudiantiles Completando FUAS'},
     {id: 'publicacionnominaoficial',date: '21 Oct 2021',content: 'Publicación Nomina Oficial De Carreras PACE Con Oferta Centralizada'},
+    {id: 'publicacion_grupos',date: '15 Nov 2021, 09:00 AM',hour: '09:00 AM',content: 'Difusión Grupos De Rendicion PDT'},
     {id: 'publicacionofertadefinitiva2',date: '25 Nov 2021',content: 'Publicación Oferta Definitiva de Carreras, Vacantes y Ponderaciones'},
     {id: 'pruebacomprensionlectora_g1',date: '06 Dec 2021, 10:00 AM',hour: '10:00 AM',content: 'Rendición Prueba de Comprensión Lectora (Grupo 1)'},
     {id: 'pruebaciencias_g1',date: '06 Dec 2021, 03:00 PM',hour: '03:00 PM',content: 'Rendición Prueba de Ciencias (Grupo 1)'},
